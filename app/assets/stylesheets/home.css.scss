@@ -41,6 +41,7 @@
   width: 90%;
   height: 60%;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 .like-pic {
@@ -71,9 +72,16 @@
     text-shadow: 0 1px 0 
 }
 
-.breaker{
+.breaker {
   width: 100%;
   margin: 10px 10px 10px 10px;
+  float: left;
+}
+
+.breaker1 {
+  width: 100%;
+  margin: 10px 10px 10px 10px;
+  background: black;
 }
 
 .like-text1 {
