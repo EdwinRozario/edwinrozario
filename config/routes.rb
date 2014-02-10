@@ -5,8 +5,14 @@ Edwinrozario::Application.routes.draw do
     collection do
       get :cover
       get :likes
-      get :works
       get :contact
+    end
+  end
+
+  resources :work do
+    collection do
+      get :employment
+      get :others
     end
   end
 
