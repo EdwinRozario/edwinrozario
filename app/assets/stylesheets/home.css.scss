@@ -4,7 +4,7 @@
 
 .contacts-container{
   width: 400px;
-  height: 350px;
+  height: 375px;
   padding: 15px 15px 0;
   margin: 0 7px 15px;
   font-size: 16px;
@@ -35,4 +35,47 @@
     margin: 0 0 -15px;
     text-align: center;
     text-shadow: 0 1px 0
+}
+
+.like-container {
+  width: 90%;
+  height: 60%;
+  margin: 0 auto;
+}
+
+.like-pic {
+  float: left; 
+}
+
+.like-text {
+    color: #787878;
+    font-family: "Poly",serif;
+    font-size: 30px;
+    letter-spacing: -2px;
+#    line-height: 62px;
+    margin: 0 0 -15px;
+    text-align: center;
+    text-shadow: 0 1px 0
+}
+
+.like-pic1 {
+  float: left;
+  color: #787878;
+    font-family: "Poly",serif;
+    width: 70%;
+    font-size: 30px;
+    letter-spacing: -2px;
+#    line-height: 62px;
+    margin: 0 0 -15px;
+    text-align: center;
+    text-shadow: 0 1px 0 
+}
+
+.breaker{
+  width: 100%;
+  margin: 10px 10px 10px 10px;
+}
+
+.like-text1 {
+  float: left;
 }
