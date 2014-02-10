@@ -14,3 +14,24 @@
   -moz-border-radius: 5px;
   border-radius: 30px;
 }
+
+.cover-container {
+  width: 90%;
+  height: 60%;
+  margin: 0 auto;
+}
+
+.profile-pic {
+  float: left;
+}
+
+.profile-text {
+    color: #787878;
+    font-family: "Poly",serif;
+    font-size: 40px;
+    letter-spacing: -2px;
+    line-height: 62px;
+    margin: 0 0 -15px;
+    text-align: center;
+    text-shadow: 0 1px 0
+}
