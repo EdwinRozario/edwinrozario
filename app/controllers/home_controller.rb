@@ -10,6 +10,12 @@ class HomeController < ApplicationController
   end
 
   def contact
+  	@mail = false
+  end
+
+  def mail
+    ContactMailer.contact_mail(params["email"], params["message"]).deliver
+  	render :contact
   end
 
 end

@@ -6,6 +6,7 @@ Edwinrozario::Application.routes.draw do
       get :cover
       get :likes
       get :contact
+      get :mail
     end
   end
 
