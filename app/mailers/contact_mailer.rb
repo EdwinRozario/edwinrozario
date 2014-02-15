@@ -3,6 +3,7 @@ class ContactMailer < ActionMailer::Base
 
   def contact_mail(from, message)
     @message = message
+    @from = from
     mail(:to => "rozarioed@gmail.com", :subject => "edwinrozario.herokuapp")
   end
 
