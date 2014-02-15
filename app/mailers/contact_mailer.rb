@@ -1,5 +1,5 @@
 class ContactMailer < ActionMailer::Base
-  default from: "edwinrozario.herokuapp.com"
+  default from: "savessw@gmail.com"
 
   def contact_mail(from, message)
     @message = message
