@@ -14,6 +14,7 @@ class HomeController < ApplicationController
   end
 
   def mail
+    p "MAILING**********************"
     ContactMailer.contact_mail(params["email"], params["message"]).deliver
   	render :contact
   end
