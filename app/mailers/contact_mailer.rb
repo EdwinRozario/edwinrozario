@@ -3,8 +3,7 @@ class ContactMailer < ActionMailer::Base
 
   def contact_mail(from, message)
     p "********************************************"
-  	p ActionMailer::Base.smtp_settings[:user_name]
-  	p ActionMailer::Base.smtp_settings[:password]
+  	p ActionMailer::Base.smtp_settings
 
     @message = message
     mail(:to => "rozarioed@gmail.com", :subject => "edwinrozario.herokuapp")
