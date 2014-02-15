@@ -72,13 +72,12 @@ Edwinrozario::Application.configure do
 #    authentication: "plain"
 #  }
 
-  YourApplicationName::Application.configure do
-      require 'tlsmail'
-      Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
-      ActionMailer::Base.delivery_method = :smtp
-      ActionMailer::Base.perform_deliveries = true
-      ActionMailer::Base.raise_delivery_errors = true
-      ActionMailer::Base.smtp_settings = {
+  require 'tlsmail'
+  Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.perform_deliveries = true
+  ActionMailer::Base.raise_delivery_errors = true
+  ActionMailer::Base.smtp_settings = {
           :address => "smtp.gmail.com",
           :port => "587",
           :domain => "gmail.com",
@@ -86,7 +85,7 @@ Edwinrozario::Application.configure do
           :authentication => :login,
           :user_name => ENV['GMAIL_SMTP_USER'],
           :password => ENV['GMAIL_SMTP_PASSWORD']
-      }
+    }
 
   config.action_mailer.raise_delivery_errors = true
 
