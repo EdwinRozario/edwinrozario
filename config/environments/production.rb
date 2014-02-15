@@ -72,6 +72,24 @@ Edwinrozario::Application.configure do
 #    authentication: "plain"
 #  }
 
+  YourApplicationName::Application.configure do
+      require 'tlsmail'
+      Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
+      ActionMailer::Base.delivery_method = :smtp
+      ActionMailer::Base.perform_deliveries = true
+      ActionMailer::Base.raise_delivery_errors = true
+      ActionMailer::Base.smtp_settings = {
+          :address => "smtp.gmail.com",
+          :port => "587",
+          :domain => "gmail.com",
+          :enable_starttls_auto => true,
+          :authentication => :login,
+          :user_name => ENV['GMAIL_SMTP_USER'],
+          :password => ENV['GMAIL_SMTP_PASSWORD']
+      }
+
+  config.action_mailer.raise_delivery_errors = true
+
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.perform_deliveries = true
