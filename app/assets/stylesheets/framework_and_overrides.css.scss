@@ -11,6 +11,9 @@ img {
   font-size: inherit;
   }
 
+.navbar-nav { text-align: center; }
+
+
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral
@@ -43,3 +46,38 @@ section {
   @extend .row;
   margin-top: 20px;
   }
+
+.navbar-fixed-top {
+  text-align: center;
+  height: 40px;
+}
+
+.navbar .nav {
+      padding:0px 32% 15px
+    }
+
+.jumbotron {
+  background-image:url('/images/face1.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 905px;
+  color: white;
+}
+
+.jumbotron h1 { colour: FFFFFF;}
+
+.carousel-inner {
+width:100%;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.peopleCarouselImg img {
+  width: auto;
+  height: 225px;
+  max-height: 225px;
+}
