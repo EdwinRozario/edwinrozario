@@ -88,7 +88,7 @@ $(function(){
                     <h2 class="section-heading">Want to build a Rocket
                         <br>Real one</h2>
                     <p class="lead">
-                      I dont exactly remember, when did I start fantasizing about Rockets. Normally relectunt to read books, the only only books i have read are biographies of <%= link_to "Robert H Goddard",  "http://en.wikipedia.org/wiki/Robert_H._Goddard"%>, <%= link_to "Wernher Von Braun",  "http://en.wikipedia.org/wiki/Wernher_von_Braun"%> and <%= link_to "A P J Abdul Kalam",  "http://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam"%>. Couldnt get a book on <%= link_to "Sergei Korolev",  "http://en.wikipedia.org/wiki/Sergei_Korolev"%>. Have burned mom's kitchen trying to build a rocket engine. The image to the left is of R-7 Semyorka, 60 year old design still going strong. Just like the most efficient class ever written, the basic desing always remain the same but efficient. It seems Korolev had applied <%= link_to "SOLID", "http://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29"%> principles 60 years back in Rocketry. 
+                      I dont exactly remember, when did I start fantasizing about Rockets. Normally relectunt to read books, the only books i have read are biographies of <%= link_to "Robert H Goddard",  "http://en.wikipedia.org/wiki/Robert_H._Goddard"%>, <%= link_to "Wernher Von Braun",  "http://en.wikipedia.org/wiki/Wernher_von_Braun"%> and <%= link_to "A P J Abdul Kalam",  "http://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam"%>. Couldnt get a book on <%= link_to "Sergei Korolev",  "http://en.wikipedia.org/wiki/Sergei_Korolev"%>. Have burned mom's kitchen trying to build a rocket engine. The image to the left is of R-7 Semyorka, 60 year old design still going strong. Just like the most efficient class ever written, the basic desing always remain the same but efficient. It seems Korolev had applied <%= link_to "SOLID", "http://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29"%> principles 60 years back in Rocketry. 
                     </p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6 col-sm-6">
@@ -156,16 +156,20 @@ $(function(){
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-6">
+                <!-- <div class="col-lg-6">
                     <h2>To get in touch:</h2>
-                </div>
-                <div class="col-lg-6">
+                </div> -->
+                <div class="col-lg-7">
                     <ul class="list-inline banner-social-buttons">
                         <li><a href="https://twitter.com/EdwinARozario" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                         </li>
                         <li><a href="https://github.com/EdwinRozario" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                         </li>
                         <li><a href="http://www.linkedin.com/pub/edwin-rozario/46/4a6/742" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                        </li>
+                        <li>
+                        <%= link_to "JarviZ".html_safe, 
+                        contact_home_index_path, class: "btn btn-primary btn-lg" %>
                         </li>
                     </ul>
                 </div>
@@ -183,9 +187,6 @@ $(function(){
                 <div class="col-lg-12">
                     <ul class="list-inline">
                         <li><a href="#home">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li><a href="#about">About</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li><a href="#services">Work</a>
