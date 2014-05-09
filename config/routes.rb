@@ -11,4 +11,6 @@ RailsBootstrap::Application.routes.draw do
     end
   end
 
+  resources :blog
+
 end
