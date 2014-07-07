@@ -72,6 +72,30 @@ $(function(){
   <input type='text' name='checkf' value='' style='display:none'; />
 </form>
 
+
+<form action='https://leet.sirportly.com/remote_form/817' method='POST'>
+  <dl>
+    <dt><label for='form817-name'>Name</label></dt>
+    <dd><input type='text' name='ticket[name]' id='form817-name' /></dd>
+
+    <dt><label for='form817-email'>E-Mail Address</label></dt>
+    <dd><input type='text' name='ticket[email]' id='form817-email' /></dd>
+
+    <dt><label for='form817-subject'>Subject</label></dt>
+    <dd><input type='text' name='ticket[subject]' id='form817-subject' /></dd>
+
+    <dt><label for='form817-custom-occupation'>occupation</label></dt>
+    <dd><input type='text' name='ticket[custom][occupation]' value='NULL' id='form817-custom-occupation' /></dd>
+
+    <dt><label for='form817-message'>Message</label></dt>
+    <dd><textarea name='ticket[message]' id='form817-message'></textarea></dd>
+
+  </dl>
+  <p class='submit'><input type='submit' name='send' value='Send Message' /></p>
+  <input type='text' name='checkf' value='' style='display:none'; />
+</form>
+
+
 <div class="jumbotron">
 <%= gflash %>
     <div class="intro-header">
