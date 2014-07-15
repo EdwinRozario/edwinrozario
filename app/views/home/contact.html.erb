@@ -28,3 +28,44 @@
 </form>
 </div>
 </div>
+
+
+
+<h1>TEST</h1>
+
+<form action='https://new-zealand-government.sirportly.com/remote_form/796' method='POST'>
+  <dl>
+    <dt><label for='form796-name'>Name</label></dt>
+    <dd><input type='text' name='ticket[name]' id='form796-name' /></dd>
+
+    <dt><label for='form796-email'>E-Mail Address</label></dt>
+    <dd><input type='text' name='ticket[email]' id='form796-email' /></dd>
+
+    <dt><label for='form796-subject'>Subject</label></dt>
+    <dd><input type='text' name='ticket[subject]' id='form796-subject' /></dd>
+
+    <dt><label for='form796-custom-business-or-individual'>business-or-individual</label></dt>
+    <dd><div class='checkbox-group'><input id='ticket_custom_business' type='radio' name='ticket[custom][business-or-individual]' value='Business'  /> <label for='ticket_custom_business' class='radio'>Business</label> <input id='ticket_custom_individual' type='radio' name='ticket[custom][business-or-individual]' value='Individual'  /> <label for='ticket_custom_individual' class='radio'>Individual</label> </div></dd>
+
+    <dt><label for='form796-custom-contact-method'>contact-method</label></dt>
+    <dd><div class='form__select'><select name='ticket[custom][contact-method]' id='form796-custom-contact-method'><option></option><option>no</option><option>email</option><option>phone</option></select></div></dd>
+
+    <dt><label for='form796-custom-feedback-type'>feedback-type</label></dt>
+    <dd><div class='form__select'><select name='ticket[custom][feedback-type]' id='form796-custom-feedback-type'><option></option><option>Positive feedback about the information and service you have received</option><option>Make a complaint</option><option>Suggest an improvement</option><option>Report a website error</option><option>Something else</option></select></div></dd>
+
+    <dt><label for='form796-custom-questionaire1'>questionaire1</label></dt>
+    <dd><textarea name='ticket[custom][questionaire1]' id='form796-custom-questionaire1'></textarea></dd>
+
+    <dt><label for='form796-custom-questionaire2'>questionaire2</label></dt>
+    <dd><textarea name='ticket[custom][questionaire2]' id='form796-custom-questionaire2'></textarea></dd>
+
+    <dt><label for='form796-custom-questionaire3'>questionaire3</label></dt>
+    <dd><textarea name='ticket[custom][questionaire3]' id='form796-custom-questionaire3'></textarea></dd>
+
+    <dt><label for='form796-message'>Message</label></dt>
+    <dd><textarea name='ticket[message]' id='form796-message'></textarea></dd>
+
+  </dl>
+  <p class='submit'><input type='submit' name='send' value='Send Message' /></p>
+  <input type='text' name='checkf' value='' style='display:none'; />
+</form>
