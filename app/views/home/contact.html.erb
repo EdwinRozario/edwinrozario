@@ -67,6 +67,28 @@
     <dd><textarea name='ticket[message]' id='form838-message'></textarea></dd>
 
   </dl>
+
+<div class="contacted box">
+<select id="contact-method" name="ticket[custom][contact-method]">
+<option value="0">Would you like to be contacted regarding your feedback (optional):</option>
+<option value="no">No - Don't contact me. I just wanted to tell you something</option>
+<option value="email">Yes - Please contact me via email</option>
+<option class="js-show" value="phone">Yes - Please contact me via phone</option>
+</select>
+<ul style="display: none;">
+<li class="r7 input l">
+<input id="name" type="text" maxlength="100" name="ticket[name]" placeholder="Name">
+<span class="hidden error">* Please fill in your name</span>
+</li>
+<li class="input r">
+<input id="email" type="text" maxlength="100" name="ticket[email]" placeholder="Email">
+<span class="hidden error">* Please fill in your email</span>
+<input id="phone" class="js-show" type="text" maxlength="100" name="ticket[custom][phone]" placeholder="Phone">
+<span class="hidden error">* Please fill in your phone</span>
+</li>
+</ul>
+</div>
+
   <p class='submit'><input type='submit' name='send' value='Send Message' /></p>
   <input type='text' name='checkf' value='' style='display:none'; />
 </form>
