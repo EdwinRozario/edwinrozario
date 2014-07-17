@@ -34,63 +34,100 @@
 <div>
 <h1>TEST</h1>
 
-<form action='https://new-zealand-government.sirportly.com/remote_form/838' method='POST'>
+
+<!-- <form action='https://new-zealand-government.sirportly.com/remote_form/769' method='POST'>
   <dl>
-    <dt><label for='form838-name'>Name</label></dt>
-    <dd><input type='text' name='ticket[name]' id='form838-name' /></dd>
+    <dt><label for='form769-name'>Name</label></dt>
+    <dd><input type='text' name='ticket[name]' id='form769-name' /></dd>
 
-    <dt><label for='form838-email'>E-Mail Address</label></dt>
-    <dd><input type='text' name='ticket[email]' id='form838-email' /></dd>
+    <dt><label for='form769-subject'>Subject</label></dt>
+    <dd><input type='text' name='ticket[subject]' id='form769-subject' /></dd>
 
-    <dt><label for='form838-subject'>Subject</label></dt>
-    <dd><input type='text' name='ticket[subject]' id='form838-subject' /></dd>
+    <dt><label for='form769-message'>Message</label></dt>
+    <dd><textarea name='ticket[message]' id='form769-message'></textarea></dd>
 
-    <dt><label for='form838-custom-business-or-individual'>business-or-individual</label></dt>
+    <dt><label for='form769-custom-business-or-individual'>business-or-individual</label></dt>
     <dd><div class='checkbox-group'><input id='ticket_custom_business' type='radio' name='ticket[custom][business-or-individual]' value='Business'  /> <label for='ticket_custom_business' class='radio'>Business</label> <input id='ticket_custom_individual' type='radio' name='ticket[custom][business-or-individual]' value='Individual'  /> <label for='ticket_custom_individual' class='radio'>Individual</label> </div></dd>
 
-    <dt><label for='form838-custom-contact-method'>contact-method</label></dt>
-    <dd><div class='form__select'><select name='ticket[custom][contact-method]' id='form838-custom-contact-method'><option></option><option>no</option><option>email</option><option>phone</option></select></div></dd>
+    <dt><label for='form769-custom-feedback-type'>feedback-type</label></dt>
+    <dd><div class='form__select'><select name='ticket[custom][feedback-type]' id='form769-custom-feedback-type'><option></option><option>Positive feedback about the information and service you have received</option><option>Make a complaint</option><option>Suggest an improvement</option><option>Report a website error</option><option>Something else</option></select></div></dd>
 
-    <dt><label for='form838-custom-feedback-type'>feedback-type</label></dt>
-    <dd><div class='form__select'><select name='ticket[custom][feedback-type]' id='form838-custom-feedback-type'><option></option><option>Positive feedback about the information and service you have received</option><option>Make a complaint</option><option>Suggest an improvement</option><option>Report a website error</option><option>Something else</option></select></div></dd>
+    <dt><label for='form769-custom-questionaire1'>questionaire1</label></dt>
+    <dd><textarea name='ticket[custom][questionaire1]' id='form769-custom-questionaire1'></textarea></dd>
 
-    <dt><label for='form838-custom-questionaire1'>questionaire1</label></dt>
-    <dd><textarea name='ticket[custom][questionaire1]' id='form838-custom-questionaire1'></textarea></dd>
+    <dt><label for='form769-custom-questionaire2'>questionaire2</label></dt>
+    <dd><textarea name='ticket[custom][questionaire2]' id='form769-custom-questionaire2'></textarea></dd>
 
-    <dt><label for='form838-custom-questionaire2'>questionaire2</label></dt>
-    <dd><textarea name='ticket[custom][questionaire2]' id='form838-custom-questionaire2'></textarea></dd>
+    <dt><label for='form769-custom-questionaire3'>questionaire3</label></dt>
+    <dd><textarea name='ticket[custom][questionaire3]' id='form769-custom-questionaire3'></textarea></dd>
 
-    <dt><label for='form838-custom-questionaire3'>questionaire3</label></dt>
-    <dd><textarea name='ticket[custom][questionaire3]' id='form838-custom-questionaire3'></textarea></dd>
+    <select name="dropper" id="dropper" style="width:150px;", onchange="ToggleDiv(this.value)">  
+      <option value="0">Would you like to be contacted regarding your feedback (optional)</option>
+      <option value="0">No - Don't contact me. I just wanted to tell you something</option>
+      <option value="contact-yes">Yes - Please contact me via email</option>
+    </select>
 
-    <dt><label for='form838-message'>Message</label></dt>
-    <dd><textarea name='ticket[message]' id='form838-message'></textarea></dd>
+    <div id='contact-yes' style="display: none;" >
+      <dt><label for='form769-email'>E-Mail Address</label></dt>
+      <dd><input type='text' name='ticket[email]' id='form769-email' /></dd>
+    </div>
+
+    <p class='submit'><input type='submit' name='send' value='Send Message' /></p>
+    <input type='text' name='checkf' value='' style='display:none'; />
 
   </dl>
 
-<div class="contacted box">
-<select id="contact-method" name="ticket[custom][contact-method]">
-<option value="0">Would you like to be contacted regarding your feedback (optional):</option>
-<option value="no">No - Don't contact me. I just wanted to tell you something</option>
-<option value="email">Yes - Please contact me via email</option>
-<option class="js-show" value="phone">Yes - Please contact me via phone</option>
-</select>
-<ul style="display: none;">
-<li class="r7 input l">
-<input id="name" type="text" maxlength="100" name="ticket[name]" placeholder="Name">
-<span class="hidden error">* Please fill in your name</span>
-</li>
-<li class="input r">
-<input id="email" type="text" maxlength="100" name="ticket[email]" placeholder="Email">
-<span class="hidden error">* Please fill in your email</span>
-<input id="phone" class="js-show" type="text" maxlength="100" name="ticket[custom][phone]" placeholder="Phone">
-<span class="hidden error">* Please fill in your phone</span>
-</li>
-</ul>
-</div>
+<form action='https://new-zealand-government.sirportly.com/remote_form/796' method='POST'>
+  <dl>
+    <dt><label for='form796-name'>Name</label></dt>
+    <dd><input type='text' name='ticket[name]' id='form796-name' /></dd>
 
+    <dt><label for='form796-subject'>Subject</label></dt>
+    <dd><input type='text' name='ticket[subject]' id='form796-subject' /></dd>
+
+    <dt><label for='form796-message'>Message</label></dt>
+    <dd><textarea name='ticket[message]' id='form796-message'></textarea></dd>
+
+    <dt><label for='form796-custom-business-or-individual'>business-or-individual</label></dt>
+    <dd><div class='checkbox-group'><input id='ticket_custom_business' type='radio' name='ticket[custom][business-or-individual]' value='Business'  /> <label for='ticket_custom_business' class='radio'>Business</label> <input id='ticket_custom_individual' type='radio' name='ticket[custom][business-or-individual]' value='Individual'  /> <label for='ticket_custom_individual' class='radio'>Individual</label> </div></dd>
+
+    <dt><label for='form796-custom-feedback-type'>feedback-type</label></dt>
+    <dd><div class='form__select'><select name='ticket[custom][feedback-type]' id='form796-custom-feedback-type'><option></option><option>Positive feedback about the information and service you have received</option><option>Make a complaint</option><option>Suggest an improvement</option><option>Report a website error</option><option>Something else</option></select></div></dd>
+
+    <dt><label for='form796-custom-questionaire1'>questionaire1</label></dt>
+    <dd><textarea name='ticket[custom][questionaire1]' id='form796-custom-questionaire1'></textarea></dd>
+
+    <dt><label for='form796-custom-questionaire2'>questionaire2</label></dt>
+    <dd><textarea name='ticket[custom][questionaire2]' id='form796-custom-questionaire2'></textarea></dd>
+
+    <dt><label for='form796-custom-questionaire3'>questionaire3</label></dt>
+    <dd><textarea name='ticket[custom][questionaire3]' id='form796-custom-questionaire3'></textarea></dd>
+
+    <select name="dropper" id="dropper" style="width:150px;", onchange="ToggleDiv(this.value)">  
+      <option value="0">Would you like to be contacted regarding your feedback (optional)</option>
+      <option value="0">No - Don't contact me. I just wanted to tell you something</option>
+      <option value="contact-yes">Yes - Please contact me via email</option>
+    </select>
+
+    <div id='contact-yes' style="display: none;" >
+      <dt><label for='form769-email'>E-Mail Address</label></dt>
+      <dd><input type='text' name='ticket[email]' id='form769-email' /></dd>
+    </div>
+
+
+  </dl>
   <p class='submit'><input type='submit' name='send' value='Send Message' /></p>
   <input type='text' name='checkf' value='' style='display:none'; />
 </form>
 
-</div>
+<script>
+
+    var email = document.getElementById("form769-email");
+    email.value = "edwin@boost.co.nz"; // default email when email option is not selected 
+
+    function ToggleDiv(id) {
+        if (id != 0 ) { email.value = '';}
+        document.getElementById(id).style.display = "block";
+    }
+
+</script> -->
