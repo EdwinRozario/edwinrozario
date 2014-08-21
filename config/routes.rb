@@ -7,6 +7,7 @@ RailsBootstrap::Application.routes.draw do
       get :about
       get :work
       get :contact
+      get :status
       post :mail
     end
   end
