@@ -12,6 +12,17 @@ $(function(){
 </script>
 
 
+<div class="right-col">
+<div class="pinned note-container">
+  <div class="note">
+    <h3>New with Me!</h3>
+    <p>There is always someting new with everyone...</p>
+    <p><%= link_to "My best friend is getting married",  status_home_index_path %></p>
+  </div>
+</div>
+</div>
+
+
 <div class="jumbotron">
 
     <div class="intro-header">
@@ -21,7 +32,7 @@ $(function(){
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-14">
                     <div class="intro-message">
                         <h1>Edwin Rozario</h1>
                         <h3>Programmer, Rocket Enthusiast, Amateur Cook, Part-time Gamer, Dreamer</h3>
@@ -162,10 +173,17 @@ $(function(){
                 </div> -->
                 <div class="col-lg-7">
 
-                    <h4>
+<!--                     <h4>
                       <%= link_to "My best friend is getting married",  status_home_index_path %>
                     </h4>
-                <!--     <ul class="list-inline banner-social-buttons">
+
+                    <ul>
+                    <li><%= link_to 'Home', root_path %></span></li>
+                    <li><%= link_to 'Work', page_path('about') %></li>
+                    <li><%= link_to 'Blog', blog_index_path %></li>
+                    <li><%= link_to 'Contact', contact_home_index_path %></li>
+                    </ul>
+                 <ul class="list-inline banner-social-buttons">
                         <li><a href="https://twitter.com/EdwinARozario" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                         </li>
                         <li><a href="https://github.com/EdwinRozario" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
@@ -175,8 +193,8 @@ $(function(){
                         <li>
                         <%= link_to "JarviZ".html_safe, 
                         contact_home_index_path, class: "btn btn-primary btn-xl" %>
-                        </li> -->
-                    </ul>
+                        </li>
+                    </ul> -->
                 </div>
             </div>
 
@@ -200,7 +218,7 @@ $(function(){
                         <li><a href="#services">Blog</a>
                         </li>                        
                         <li class="footer-menu-divider">&sdot;</li>
-                        <li><a href="#contact">Contact</a>
+                        <li><%= link_to 'Contact', contact_home_index_path %></li>
                         </li>
                     </ul>
                     <!-- <p class="copyright text-muted small">Copyright &copy; Your Company 2013. All Rights Reserved</p> -->
