@@ -18,7 +18,7 @@ gem 'bootstrap-sass', '>= 3.0.0.0'
 gem 'font-awesome-sass'
 gem 'bootstrap_helper'
 gem 'high_voltage'
-gem 'gritter', '1.1.0'
+gem 'rails_12factor'
 
 group :development do
   gem 'better_errors'
