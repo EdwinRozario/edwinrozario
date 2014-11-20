@@ -11,8 +11,13 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery-ui
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap
-//= reuiore gritter
 //= require_tree .
+
+
+
+$( document ).ready(function() {
+  $(".pinned").pin()
+});
