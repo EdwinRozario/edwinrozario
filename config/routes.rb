@@ -8,6 +8,7 @@ RailsBootstrap::Application.routes.draw do
       get :work
       get :contact
       get :status
+      get :talk
       post :mail
     end
   end

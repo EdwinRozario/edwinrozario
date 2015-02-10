@@ -17,6 +17,9 @@ class HomeController < ApplicationController
   def status
   end
 
+  def talk
+  end
+
   def mail
     ContactMailer.contact_mail(params["name"], params["email"], params["message"]).deliver
   	redirect_to root_path
