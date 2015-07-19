@@ -21,8 +21,13 @@ class HomeController < ApplicationController
   end
 
   def mail
-    ContactMailer.contact_mail(params["name"], params["email"], params["message"]).deliver
-  	redirect_to root_path
+    if params["external"]
+      ContactMailer.external_mail(params["name"], params["email"], params["message"], params["phone"]).deliver
+      render :json => {status: "success"}
+    else
+      ContactMailer.contact_mail(params["name"], params["email"], params["message"]).deliver
+      redirect_to root_path      
+    end
   end
 
 end
