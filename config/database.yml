@@ -8,7 +8,7 @@
 development:
   adapter: mysql2
   user: root
-  password: #root123
+  password: root123
   database: campaign
   pool: 5
   timeout: 5000
