@@ -5,7 +5,7 @@ class ContactMailer < ActionMailer::Base
     @message = message
     @from = from
     @phone = phone
-    mail(:to => "sr@rowlandwoodslegal.org", :subject => "rowlandwoodslegal.org [#{name}]")
+    mail(:to => "sn@rowlandwoodslegal.org", :subject => "rowlandwoodslegal.org [#{name}]")
   end
 
   def contact_mail(name, from, message)
