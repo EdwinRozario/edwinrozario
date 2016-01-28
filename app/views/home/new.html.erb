@@ -17,8 +17,8 @@ $(function(){
 <div class="right-col">
 <div class="pinned note-container">
   <div class="note">
-    <h3>New with Me!</h3>
-    <p>Need a change...</p>
+    <i class="fa fa-twitter fa-3x"></i>
+    <p><%= TW_CLINET.user_timeline('EdwinARozario', {count: 1, include_rts: true}).first.text %></p>
   </div>
 </div>
 </div>

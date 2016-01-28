@@ -20,6 +20,8 @@ gem 'font-awesome-sass'
 gem 'bootstrap_helper'
 gem 'high_voltage'
 gem 'rails_12factor'
+gem 'twitter'
+gem "font-awesome-rails"
 
 group :development do
   gem 'better_errors'
